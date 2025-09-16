@@ -1,6 +1,6 @@
 import { drizzle } from 'drizzle-orm/neon-http';
 import { neon } from '@neondatabase/serverless';
-import * as schema from './schema';
+import * as schema from './schema/index';
 
 // Load environment variables if not in Next.js runtime
 if (typeof window === 'undefined' && !process.env.NEXT_RUNTIME) {

@@ -5,8 +5,20 @@ import { AuthForm } from '@/components/AuthForm';
 import { SocialProviders } from '@/components/SocialProviders';
 
 export default function SignInPage() {
-  const handleFormSubmit = (data: any) => {
-    console.log('Sign in form submitted:', data);
+  const handleFormSubmit = async (data: any) => {
+    const formData = new FormData();
+    formData.append('email', data.email);
+    formData.append('password', data.password);
+    
+    const { signIn } = await import('@/lib/auth/actions');
+    const result = await signIn(formData);
+    
+    if (result.error) {
+      console.error('Sign in error:', result.error);
+    } else {
+      console.log('Sign in successful:', result.user);
+      window.location.href = '/';
+    }
   };
 
   const handleGoogleSignIn = () => {
