@@ -37,8 +37,6 @@ const sampleProducts = [
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar cartItemCount={2} />
-      
       <main className="flex-1 bg-light-200 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-heading-1 font-jost text-dark-900 mb-8 text-center">
@@ -52,8 +50,6 @@ const Home = () => {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 };

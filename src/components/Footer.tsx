@@ -115,7 +115,7 @@ export function Footer() {
                   height={16}
                   className="h-4 w-4 filter invert opacity-60"
                 />
-                <span className="text-body text-dark-500">Croatia</span>
+                <span className="text-body text-dark-500">Norge</span>
               </div>
               <span className="text-body text-dark-500">
                 © 2025 Nike, Inc. All Rights Reserved

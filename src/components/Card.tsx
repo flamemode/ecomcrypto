@@ -34,7 +34,7 @@ export function Card({
         {isBestSeller && (
           <div className="absolute top-4 left-4 z-10">
             <span className="bg-orange text-light-100 text-caption font-medium px-3 py-1 rounded">
-              Best Seller
+              Mest Populær
             </span>
           </div>
         )}
